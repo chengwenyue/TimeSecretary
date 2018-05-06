@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_friend_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="程文月"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_person"
+            android:layout_gravity="left|center_vertical"
+            android:id="@+id/imageView"/>
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_keyboard"
+            android:layout_gravity="right|center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/unreadmsg"
+            android:layout_width="16dip"
+            android:layout_height="16.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@color/red"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:shadowColor="#19000000"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:text="10"
+            android:textColor="#ffffffff"
+            android:textSize="10.0dip"
+            android:layout_marginEnd="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/iv_arrow"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/expand_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/ib_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sms"
+            android:layout_marginRight="70dp"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_detail"
+            android:layout_gravity="center"
+            android:id="@+id/ib_detail"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70dp"
+            android:id="@+id/ib_delete"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+    </View>
+</LinearLayout>

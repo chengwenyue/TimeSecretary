@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<justita.top.timesecretary.widget.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/affair_item"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:minHeight="60dp"
+    android:background="@color/white"
+    >
+    <!--左置布局-->
+    <LinearLayout
+        android:id="@+id/bg_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green">
+        <ImageView
+            android:id="@+id/img_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_achieve"/>
+    </LinearLayout>
+
+
+    <!--右置布局-->
+
+    <ImageButton
+        android:id="@+id/bt_right"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/affair_item_del_bt_bg"
+        android:src="@drawable/ic_del"/>
+    <!--前景布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/affair_item_padding"
+        android:paddingBottom="@dimen/affair_item_padding"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/main_margin"
+            android:layout_marginRight="@dimen/main_margin"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/affair_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:text="吃饭"/>
+            <View
+                android:id="@+id/affair_name_cover"
+                android:layout_width="50dp"
+                android:layout_height="1dp"
+                android:background="@color/rule"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true">
+            </View>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/main_margin"
+            android:layout_marginRight="@dimen/main_margin">
+            <TextView
+                android:id="@+id/affair_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:textSize="11sp"
+                android:text="11-21 21:16"/>
+
+            <View
+                android:id="@+id/affair_time_cover"
+                android:layout_width="50dp"
+                android:layout_height="1dp"
+                android:background="@color/rule"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true">
+            </View>
+
+            <ImageView
+                android:id="@+id/category_item_color"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/ic_category_item_bg"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:id="@+id/affair_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="默认"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/category_item_color"/>
+
+            <View
+                android:id="@+id/affair_category_cover"
+                android:layout_width="50dp"
+                android:layout_height="1dp"
+                android:background="@color/rule"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true">
+            </View>
+        </RelativeLayout>
+    </LinearLayout>
+</justita.top.timesecretary.widget.SwipeLayout>

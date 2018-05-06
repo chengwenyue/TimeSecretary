@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item android:title="批量总结"
+              android:id="@+id/batch_summary"/>
+        <item
+            android:title="隐藏归档事件"
+            android:id="@+id/hide_achieve_affair"/>
+</menu>

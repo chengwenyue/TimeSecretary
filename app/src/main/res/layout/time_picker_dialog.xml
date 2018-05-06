@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/time_dialog_padding"
+        android:background="@color/time_dialog_bg"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/year_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/selectedDate_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12月14日"
+            android:textColor="@color/white"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/time_dialog_padding"
+        android:paddingTop="@dimen/time_dialog_padding"
+        android:paddingBottom="@dimen/time_dialog_padding">
+        <TextView
+            android:id="@+id/scrollDate_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="十二月"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/goToday_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="?attr/selectableItemBackground"
+            android:text="回到今天"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:padding="2dp"
+        android:background="#ffffffff" >
+
+        <TextView
+            style="@style/weekName"
+            android:text="日" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="一" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="二" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="三" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="四" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="五" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="六" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+    </android.support.v4.view.ViewPager>
+    <RelativeLayout
+        android:id="@+id/set_time"
+        android:padding="@dimen/time_dialog_padding"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/set_time_img"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_time2"/>
+
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/set_time_img"
+            android:textSize="18sp"
+            android:textColor="@color/gray"
+            android:text="设置时间"/>
+        <ImageButton
+            android:id="@+id/remove_time_bt"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="?attr/selectableItemBackground"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_del"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">20dp</dimen>
+    <dimen name="appbar_padding_top">0dp</dimen>
+    <dimen name="affair_item_padding">5dp</dimen>
+
+    <dimen name="main_margin">16dp</dimen>
+
+    <dimen name="main_search_padding">5dp</dimen>
+    <dimen name="main_search_margin_top">8dp</dimen>
+
+    <dimen name="affair_attr_add_list">20dp</dimen>
+
+    <dimen name="affair_attr_add_list_item_size">45dp</dimen>
+    <dimen name="affair_attr_add_list_item_padding">10dp</dimen>
+
+    <dimen name="affair_list_title_margin">8dp</dimen>
+
+    <dimen name="time_dialog_padding">12dp</dimen>
+
+    <dimen name="affair_attr_add_list_textSize">12sp</dimen>
+    <dimen name="affair_attr_name_textSize">14sp</dimen>
+
+    <dimen name="affair_attr_add_ic_size">24dp</dimen>
+
+    <dimen name="default_padding">16dp</dimen>
+
+    <dimen name="day_button_size">25dp</dimen>
+    <dimen name="day_button_margin">12dp</dimen>
+</resources>

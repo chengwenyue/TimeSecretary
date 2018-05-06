@@ -1,0 +1,179 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        Customize your theme here.
+        <item name="colorPrimaryDark">@color/toolbar_menu</item>
+        <item name="android:colorAccent">@color/white</item>
+
+        <!-- 背景颜色 -->
+        <item name="android:windowBackground">@color/white</item>
+
+        //Toggle主题
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+
+        <!--三个点的颜色-->
+        <item name="android:colorControlNormal">@color/white</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+
+    //Toggle主题
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/white</item>
+    </style>
+
+
+    //DialogFragment主题
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+    </style>
+
+    //DialogFragment主题
+
+    <style name="AlertDialogGlobal" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <!--<item name="android:windowBackground">@color/color_transparent</item>&lt;!&ndash;背景透明&ndash;&gt;-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <style name="TimePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+    </style>
+
+
+    <style name="weekName">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    //主界面 大标题 主题
+
+    <style name="MainTitleStyle">
+        <item name="android:textColor">@color/textPrimaryColor</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    //事件类别 主题
+
+    <style name="AffairCategoryStyle">
+        <item name="android:textColor">@color/color_list_title</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    //事件名称主题
+
+    <style name="AffairAddName">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    //事件备注主题
+
+    <style name="AffairAddRemark">
+        <item name="android:minLines">5</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    //事件时间
+
+    <style name="AffairTime">
+        <item name="android:textColor">@color/textPrimaryColor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="AffairItemStyle">
+        <item name="android:textSize">10sp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SaveButtonStyle">
+        <item name="android:background">@drawable/save_button</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="CancelButtonStyle">
+        <item name="android:background">@drawable/cancel_button</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AffairTheme" parent="AppTheme.Base">
+        <item name="android:windowBackground">@color/affair_add_transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 隐藏状态栏 -->
+        <item name="android:windowFullscreen">true</item>
+        <!-- 隐藏标题栏 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="bg_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/gray_white</item>
+    </style>
+
+
+    <style name="StyleEditText">
+        <item name="android:enabled">true</item>
+        <item name="android:background">@drawable/bg_search_bar</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:drawableStart">@drawable/ic_search</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/gray_white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:hint">搜索</item>
+    </style>
+
+    //popupwindow进出动画
+
+    <style name="animation">
+        <item name="android:windowEnterAnimation">@anim/enter</item>
+        <item name="android:windowExitAnimation">@anim/out</item>
+    </style>
+
+    <style name="SettingTextViewStyle">
+        <item name="android:padding">@dimen/activity_vertical_margin</item>
+        <item name="android:background">@drawable/tv_background_selector</item>
+        <item name="android:textColor">@drawable/tv_textcolor_selector</item>
+        <item name="android:textSize">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+</resources>

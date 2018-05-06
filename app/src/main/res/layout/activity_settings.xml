@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="justita.top.timesecretary.activity.SettingsActivity">
+
+    <include layout="@layout/title_sidebar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/time_delay"
+            style="@style/SettingTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="延时时间（分钟）"/>
+
+        <View
+            android:id="@+id/view1"
+            style="@style/bg_line"
+            android:layout_below="@+id/time_delay"/>
+
+        <TextView
+            android:id="@+id/user_select"
+            style="@style/SettingTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="46dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/user_select_button"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:text="切换用户"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="justita.top.timesecretary.activity.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme"
+        android:background="@color/toolbar_bg"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="82dp"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:id="@+id/under"
+                android:onClick="openPopupWindow">
+                <TextView
+                    android:id="@+id/tv_main_category_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:text="@string/ic_under_popupwindow"
+                    android:textSize="17.5sp"
+                    android:ellipsize="marquee"
+                    android:maxLength="4"
+                    android:maxLines="1"
+                    android:textColor="@color/toolbar_text"
+                    />
+                <View
+                    android:layout_width="19dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/ic_under"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_radiogroup_bg"
+                android:padding="1dp"
+                android:layout_marginLeft="70dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/radio_list"
+                    android:padding="1dp"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:text="@string/ic_under_radiobutton_left"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+                <Button
+                    android:id="@+id/radio_time"
+                    android:padding="1dp"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:text="@string/ic_under_radiobutton_right"
+                    style="?android:attr/borderlessButtonStyle"/>
+            </LinearLayout>
+
+        </LinearLayout>
+</RelativeLayout>

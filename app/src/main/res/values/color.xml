@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- -->
+    <color name="colorPrimary">#11b5f1</color>
+    <color name="colorPrimaryDark">#00B7FF</color>
+    <color name="colorAccent">#0080FF</color>
+
+    <color name="white">#ffffff</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="affair_add_transparent">#c8000000</color>
+    <color name="textPrimaryColor">#00BFFF</color>
+    <!-- -->
+
+    //toolbar背景颜色   #11b5f1
+    <color name="toolbar_bg">#11b5f1</color>
+    //toolbar上按钮颜色
+    <color name="toolbar_menu">#11b5f1</color>
+    <color name="toolbar_text">#ffffff</color>
+
+    //侧拉栏颜色
+    <color name="drawerlayout_bg">#4c4c4c</color>
+    <color name="drawerlayout_out">#e93939</color>
+    <color name="drawerlayout_header">#5e35b0</color>
+    <color name="drawerlayout_text">#ffffff</color>
+
+    //分割线颜色
+    <color name="rule">#f0f0f0</color>
+
+    <color name="text">#000000</color>
+    <color name="drawer_bg_color">#666666</color>
+
+    <color name="color_time">#ab47bc</color>
+    <color name="color_position">#29b6f6</color>
+    <color name="color_alarm">#8bc34a</color>
+    <color name="color_repeat">#ff9800</color>
+    <color name="color_category">#e51c23</color>
+
+    <color name="red">#dc191d</color>
+    <color name="green">#0a8e08</color>
+    <color name="gray_white">#c3c3c3</color>
+    <color name="yellow">#f6fd01</color>
+
+    <color name="fragment1">#aa47bb</color>
+    <color name="fragment2">#11b5f1</color>
+    <!--#20fd1c-->
+    <color name="fragment3">#fa23a944</color>
+    <color name="fragment4">#fda626</color>
+    <color name="fragment5">#e74e40</color>
+
+    <color name="color_search_bg">#e2e2e2</color>
+    <color name="color_search_text">#a2a2a2</color>
+
+    <color name="color_list_title">#009587</color>
+
+    <color name="gray">#76818d</color>
+    <color name="black">#000</color>
+    <color name="time_dialog_bg">#607fdb</color>
+
+    <color name="test">#2bae2b</color>
+
+
+    <color name="category_default">#868686</color>
+    <color name="category_work">#dc191d</color>
+
+    <color name="affair_alarm">#4caf4e</color>
+
+    <color name="bar_pg_color">#00BFFF</color>
+
+    <color name="text_color_focus">#CCCCCC</color>
+    <color name="text_color_cancle">#CC0000</color>
+    <color name="purple">#ab47bc</color>
+
+    <color name="thirty_transparent_black">#4d000000</color>
+</resources>

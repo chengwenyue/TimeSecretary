@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/list_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="48dp">
+
+    <TextView
+        android:id="@+id/tv_category_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="27dp"
+        android:text="全部"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/iv_category_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/tv_category_name"
+        android:src="@drawable/ic_achieve"/>
+
+    <justita.top.timesecretary.widget.CategoryItemColorView
+        android:id="@+id/category_item_color"
+        android:layout_width="30dp"
+        android:layout_height="48dp"
+        app:categoryItemColor="@color/fragment1"
+        app:categoryItemSize="12dp"
+        app:categoryItemRadius="5.0"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"
+        android:visibility="visible"/>
+</RelativeLayout>

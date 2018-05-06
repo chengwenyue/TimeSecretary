@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="justita.top.timesecretary"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:name=".app.BaseApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/title_activity_login">
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AppTheme.Base">
+        </activity>
+        <activity android:name=".activity.RegisterActivity">
+        </activity>
+        <activity android:name=".activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".widget.WidgetAlertActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".widget.WidgetAlertActivity"
+            android:theme="@style/DialogTheme"/>
+
+        <provider
+            android:name=".provider.DataProvider"
+            android:authorities="top.justita.timesecretary"
+            android:exported="false"/>
+
+        <provider
+            android:name=".provider.ChatProvider"
+            android:authorities="top.justita.timesecretary.Chats"/>
+        <provider
+            android:name=".provider.RosterProvider"
+            android:authorities="top.justita.timesecretary.Roster"/>
+
+        <activity
+            android:name=".activity.AffairAddActivity"
+            android:theme="@style/AffairTheme">
+        </activity>
+        <activity
+            android:name=".activity.AffairUpdateActivity"
+            android:theme="@style/AffairTheme">
+        </activity>
+        <activity android:name=".activity.SettingsActivity">
+        </activity>
+        <activity android:name=".activity.UserSelectActivity">
+        </activity>
+        <activity android:name=".activity.StatisticsActivity">
+        </activity>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="069e397c5ac1e6ac39756dedd0382c9c"/>
+        <!--
+             cwy  069e397c5ac1e6ac39756dedd0382c9c
+             bys  90b67a875dcdcb5c05223c6a2ab32708
+             wjh  2e67627dadd8f57eac198a6b2938a3e4
+        -->
+        <service android:name="com.amap.api.location.APSService"/>
+
+        <activity android:name=".activity.SearchActivity">
+        </activity>
+
+        <service
+            android:name=".service.AffairStateManageService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="justita.top.timesecretary.service.AffairStateManageService"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".service.XXService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <receiver
+            android:name=".service.AffairChangeReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="alarm.change.action"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".app.TSBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.SocialActivity"
+            android:label="@string/title_activity_social"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity android:name=".activity.PlanningActivity">
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="0dp">
+        <TextView
+            android:id="@+id/affair_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_margin"
+            android:layout_marginTop="@dimen/affair_list_title_margin"
+            android:layout_marginBottom="@dimen/affair_list_title_margin"
+            style="@style/AffairCategoryStyle"
+            android:text="Name"/>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">TimeSecretary</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <!-- Strings related to login -->
+    <string name="prompt_name">用户名</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_register">注册</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="action_register_short">注册</string>
+    <string name="prompt_email">邮箱</string>
+    <string name="error_invalid_name">用户名不可用</string>
+    <string name="error_invalid_password">密码无效</string>
+    <string name="error_incorrect_password">密码错误</string>
+    <string name="error_field_required">字段不能为空</string>
+    <string name="error_exists_name">用户名已存在</string>
+    <string name="error_empty_email">邮箱不能为空</string>
+    <string name="error_format_email">邮箱格式错误</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="default_label">default_label</string>
+    <string name="alarm_alert_predismiss_title">alarm_alert_predismiss_title</string>
+    <string name="alarm_alert_snooze_until">alarm_alert_snooze_until</string>
+    <string name="alarm_missed_text">alarm_missed_text</string>
+    <string name="alarm_missed_title">alarm_missed_title</string>
+
+    <string name="main_title">所有事件</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="ic_under_popupwindow">全部</string>
+    <string name="ic_under_radiobutton_left">列表</string>
+    <string name="ic_under_radiobutton_right">时间</string>
+    <string name="title_activity_social">SocialActivity</string>
+
+    <string name="status_available">在线</string>
+    <string name="status_away">离开</string>
+    <string name="status_chat">Q我吧</string>
+    <string name="status_dnd">请勿打扰</string>
+    <string name="status_xa">隐身</string>
+    <string name="status_offline">离线</string>
+    <string name="status_busy">忙碌</string>
+    <string name="status_online">在线</string>
+
+    <!-- 上拉下拉 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">释放立即刷新</string>
+    <string name="xlistview_header_hint_loading">正在刷新...</string>
+    <string name="xlistview_header_last_time">上次更新：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+</resources>

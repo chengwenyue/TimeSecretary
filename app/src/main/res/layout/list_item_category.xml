@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<justita.top.timesecretary.widget.SwipeLayout
+    android:id="@+id/category_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white"
+    android:minHeight="48dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red">
+        <ImageView
+            android:id="@+id/img_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_del"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="全部"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="27dp"/>
+
+        <ImageView
+            android:id="@+id/iv_category_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_achieve"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tv_category_name"
+            android:layout_marginStart="12dp"/>
+
+        <justita.top.timesecretary.widget.CategoryItemColorView
+            android:id="@+id/category_item_color"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            app:categoryItemColor="@color/fragment1"
+            app:categoryItemSize="12dp"
+            app:categoryItemRadius="5.0"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</justita.top.timesecretary.widget.SwipeLayout>

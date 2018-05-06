@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:id="@+id/title_sidebar"
+                android:layout_height="204dp"
+                android:paddingTop="24dp"
+                android:background="@color/colorPrimary"
+                android:elevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/activity_back_icon_white"/>
+
+        <TextView
+            android:id="@+id/title_sidebar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/back_white"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:textColor="@color/white"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:id="@+id/cancel_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textColor="@drawable/tv_textcolor_blue_selector"
+            android:textSize="16dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/text_play"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/circle_play"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="玩"
+            android:textColor="@color/white"
+            android:textSize="32dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_play"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="玩具老虎"
+        android:textColor="@color/white"
+        android:textSize="24dp"/>
+</RelativeLayout>

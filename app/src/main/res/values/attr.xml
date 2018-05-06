@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="categoryItemColor" format="color"/>
+    <attr name="categoryItemSize" format="dimension"/>
+    <attr name="categoryItemRadius" format="float"/>
+
+    <declare-styleable name="CategoryItemColorView">
+        <attr name="categoryItemColor"/>
+        <attr name="categoryItemSize"/>
+        <attr name="categoryItemRadius"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomBar">
+        <attr name="bgColor" format="color"/>
+        <attr name="pgColor" format="color"/>
+        <attr name="barWidth" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="LineChar">
+        <attr name="xyLineWidth" format="dimension"/>
+        <attr name="xyTextColor" format="color"/>
+        <attr name="xyTextSize" format="dimension"/>
+        <attr name="lineColor" format="color"/>
+        <attr name="interval" format="dimension"/>
+        <attr name="backgroundColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="BarChart">
+        <attr name="barChartWidth" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="barColor" format="color"/>
+        <attr name="interval2" format="dimension"/>
+        <attr name="backgroundColor2" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="PlanningChart">
+        <attr name="PlanningChartXYLineWidth" format="dimension"/>
+        <attr name="PlanningChartOccupyColor" format="color"/>
+        <attr name="PlanningChartBusyColor" format="color"/>
+        <attr name="PlanningChartInterval" format="dimension"/>
+        <attr name="PlanningChartBgColor" format="color"/>
+        <attr name="PlanningChartTextColor" format="color"/>
+        <attr name="PlanningChartTextSize" format="dimension"/>
+    </declare-styleable>
+</resources>
